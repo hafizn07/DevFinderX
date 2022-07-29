@@ -10,9 +10,9 @@ Users should be able to:
 - Switch between light and dark themes
 - Researched `prefers-color-scheme` in CSS.
 
-### Screenshot
+### Preview
 
-![](./screenshot.jpg)
+![](./Assets/images/preview.png)
 
 ### Links
 
