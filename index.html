@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" color-mode="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,300&family=Outfit:wght@300;400;600&family=Red+Hat+Text:wght@700&family=Space+Mono&display=swap"
+        rel="stylesheet" />
+    <link rel="manifest" href="/Assets/manifest.json">
+    <link rel="stylesheet" href="/Assets/style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/images/CK-favicon.png" />
+
+    <title>DEV-finder</title>
+</head>
+
+<body>
+    <header>
+        <div class="head">devfinder</div>
+        <div class="light-dark mode">
+            <button class="color-mode__btn light--hidden" aria-label="Toggle light mode">
+                LIGHT
+                <img src="/Assets/images/icon-sun.svg" alt="" />
+            </button>
+
+            <button class="color-mode__btn dark--hidden" aria-label="Toggle dark mode">
+                DARK
+                <img src="/Assets/images/icon-moon.svg" alt="" />
+            </button>
+        </div>
+    </header>
+    <div class="search">
+        <div class="searchText">
+            <img src="/Assets/images/icon-search.svg" alt="" />
+            <input type="text" placeholder="Search Github username..." />
+        </div>
+        <div class="searchbtn">Search</div>
+    </div>
+    <div class="resultBody">
+        <div class="githubHead">
+            <div class="mainImg"></div>
+            <div class="githubInfo">
+                <div class="githubUser">Github Username</div>
+                <div class="githubUserName"><a href="">@githubusername</a></div>
+                <div class="githubJoinedDate">Joined Date</div>
+            </div>
+        </div>
+
+        <div class="githubFact">
+            <div class="githubBio">Github Bio...</div>
+
+            <div class="githubRepo">
+                <div class="repos">
+                    <div class="repoHeading">Repos</div>
+                    <div class="repoTotal">0</div>
+                </div>
+                <div class="followers">
+                    <div class="followerHeading">Followers</div>
+                    <div class="followerTotal">0</div>
+                </div>
+                <div class="following">
+                    <div class="followingHeading">Following</div>
+                    <div class="followingTotal">0</div>
+                </div>
+            </div>
+
+            <div class="githubSocial">
+                <div class="location">
+                    <img src="/Assets/images/icon-location.svg" alt="" />
+                    <p class="locations">Location</p>
+                </div>
+                <div class="twitter">
+                    <img src="/Assets/images/icon-twitter.svg" alt="" />
+                    <p class="twit">Twitter</p>
+                </div>
+                <div class="website">
+                    <img src="/Assets/images/icon-website.svg" alt="" />
+                    <p class="websites">Website</p>
+                </div>
+                <div class="comapny">
+                    <img src="/Assets/images/icon-company.svg" alt="" />
+                    <p class="companies">Company</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/Assets/script.js"></script>
+</body>
+
+</html>

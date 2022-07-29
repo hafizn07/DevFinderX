@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Light Mode */
+  :root[color-mode="light"] {
+    --body-bg-color-: #f6f8ff;
+    --head-color-: #222731;
+    --darklight-color-: #697c9a;
+    --search-bg-color-: white;
+    --search-color-: #4b6a9b;
+    --black: black;
+    --follow-color-: #4b6a9b;
+    --followTotal-color-: #2b3442;
+  }
+  
+  /* Dark Mode */
+  :root[color-mode="dark"] {
+    --body-bg-color-: #141d2f;
+    --head-color-: #ffffff;
+    --darklight-color-: #ffffff;
+    --search-bg-color-: #1e2a47;
+    --search-color-: #ffffff;
+    --black: white;
+    --follow-bg-color-: #f6f8ff;
+    --follow-color-: white;
+    --followTotal-color-: #ffffff;
+    --social-color-: white;
+  }
+  
+  body {
+    background-color: var(--body-bg-color-);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Libre Franklin", sans-serif;
+    font-family: "Outfit", sans-serif;
+    font-family: "Red Hat Text", sans-serif;
+    font-family: "Space Mono", monospace;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 730px;
+    margin-bottom: 25px;
+  }
+  
+  .head {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--head-color-);
+  }
+  :root[color-mode="light"] .light--hidden {
+    display: none;
+  }
+  :root[color-mode="dark"] .dark--hidden {
+    display: none;
+  }
+  
+  
+  
+ 
+  
+  .color-mode__btn {
+    font-size: 13px;
+    outline: none;
+    background-color: var(--body-bg-color-);
+    border: none;
+    cursor: pointer;
+    color: var(--darklight-color-);
+    display: flex;
+    align-items: center;
+    width: 78px;
+    justify-content: space-around;
+  }
+  
+  .dark img,
+  .light img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .search {
+    height: 69px;
+    width: 730px;
+    background-color: var(--search-bg-color-);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .searchText {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .searchText img {
+    margin-left: 35px;
+  }
+  
+  .searchText input {
+    margin-left: 20px;
+    height: 100%;
+    width: 500px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: var(--search-color-);
+    background-color: var(--search-bg-color-);
+  }
+  
+  ::placeholder {
+    color: var(--search-color-);
+    opacity: 1;
+  }
+  
+  .searchbtn {
+    height: 50px;
+    width: 106px;
+    background-color: #0079ff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .resultBody {
+    background-color: var(--search-bg-color-);
+    width: 730px;
+    height: 419px;
+    border-radius: 15px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .resultBody .mainImg {
+    width: 117px;
+    height: 117px;
+    border-radius: 117px;
+    border: 1px solid var(--black);
+    object-fit: contain;
+  }
+  
+  .resultBody .mainImg img {
+    object-fit: contain;
+    width: 117px;
+    height: 117px;
+    border-radius: 117px;
+  }
+  
+  .githubHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 650px;
+    margin-top: 30px;
+  }
+  
+  .githubInfo {
+    height: 100%;
+    width: 480px;
+    position: relative;
+  }
+  
+  .githubUser {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--followTotal-color-);
+  }
+  
+  .githubJoinedDate {
+    position: absolute;
+    top: 7px;
+    right: 0;
+    font-size: 15px;
+    color: var(--darklight-color-);
+  }
+  
+  .githubUserName {
+    color: #0079ff;
+    margin-top: 5px;
+  }
+  
+  .githubUserName a {
+    font-size: 16px;
+    color: var(--search-btn-bg-);
+    text-decoration: none;
+  }
+  
+  .githubFact {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .githubBio {
+    width: 480px;
+    height: 25px;
+    color: var(--search-color-);
+    margin-top: -20px;
+    margin-bottom: 30px;
+  }
+  
+  .githubRepo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--body-bg-color-);
+    height: 85px;
+    width: 480px;
+    border-radius: 10px;
+  }
+  
+  .repoHeading,
+  .followerHeading,
+  .followingHeading {
+    font-size: 13px;
+    color: var(--follow-color-);
+  }
+  
+  .repoTotal,
+  .followerTotal,
+  .followingTotal {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--followTotal-color-);
+  }
+  
+  .githubSocial {
+    display: grid;
+    grid-template-columns: 275px 240px;
+    row-gap: 1.2em;
+    color: var(--social-color-);
+    margin-top: 30px;
+  }
+  
+  .location,
+  .twitter,
+  .website,
+  .comapny {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+  
+  .location img,
+  .twitter img,
+  .website img,
+  .comapny img {
+    margin-right: 10px;
+  }
+  
+  @media screen and (max-width: 769px) {
+    header,
+    .search {
+      width: 573px;
+    }
+  
+    .searchText input {
+      width: 400px;
+    }
+  
+    .resultBody {
+      width: 573px;
+      height: 481px;
+    }
+  
+    .githubHead,
+    .githubRepo,
+    .githubSocial {
+      width: 493px;
+    }
+  
+    .githubInfo {
+      width: 350px;
+    }
+  
+    .githubJoinedDate {
+      top: 70px;
+      left: 0;
+    }
+  
+    .githubFact {
+      width: 493px;
+      align-items: flex-start;
+    }
+  
+    .githubBio {
+      margin-top: 25px;
+    }
+  }
+  
+  @media screen and (max-width: 414px) {
+    header,
+    .search {
+      width: 327px;
+      margin-left: 10px;
+      height: 60px;
+    }
+  
+    .searchText img {
+      margin-left: 15px;
+    }
+  
+    .searchText input {
+      width: 160px;
+      font-size: 12px;
+    }
+  
+    .searchbtn {
+      width: 84px;
+      height: 46px;
+      font-size: 12px;
+    }
+  
+    .resultBody {
+      width: 327px;
+    }
+  
+    .githubFact,
+    .githubHead {
+      width: 279px;
+    }
+  
+    .resultBody .mainImg {
+      width: 60px;
+      height: 60px;
+      border-radius: 117px;
+    }
+  
+    .resultBody .mainImg img {
+      width: 60px;
+      height: 60px;
+      border-radius: 117px;
+    }
+  
+    .githubInfo {
+      width: 200px;
+    }
+  
+    .githubUser {
+      font-size: 18px;
+    }
+  
+    .githubUserName {
+      margin-top: -5px;
+    }
+  
+    .githubJoinedDate {
+      top: 48px;
+    }
+  
+    .githubUserName a,
+    .githubJoinedDate,
+    .githubBio {
+      font-size: 12px;
+    }
+    .githubBio {
+      margin-top: 25px;
+    }
+  
+    .githubRepo {
+      width: 279px;
+    }
+  
+    .githubSocial {
+      grid-template-columns: 279px;
+    }
+  
+    .repoTotal,
+    .followerTotal,
+    .followingTotal {
+      text-align: center;
+    }
+  }
+  
