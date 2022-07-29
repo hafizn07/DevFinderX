@@ -1,16 +1,26 @@
 {
-    "short_name": "Dev Finder App",
-    "name": "GitHub user search app",
+    "short_name": "Web App",
+    "name": "dev finder",
     "icons": [
       {
-        "src": "/Assets/images/CK-favicon.png",
+        "src": "CK-favicon.png",
         "sizes": "64x64 32x32 24x24 16x16",
-        "type": "image/x-icon"
+        "type": "image/png"
+      },
+      {
+        "src": "CK-favicon.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "CK-favicon.png",
+        "type": "image/png",
+        "sizes": "512x512"
       }
-    
     ],
     "start_url": ".",
     "display": "standalone",
     "theme_color": "#000000",
     "background_color": "#ffffff"
   }
+  
