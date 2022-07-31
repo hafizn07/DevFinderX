@@ -35,8 +35,7 @@ Users should be able to:
 - [![Html5][Html5]][Html5-url] [![CSS3][CSS3]][CSS3-url] [![javascript][javascript]][javascript-url]
 - [![Github API][Github API]][Github API-url]
 - Mobile-first workflow
-- Flexbox
-- CSS Grid
+- Flexbox and CSS Grid
 
 ## Links
 
