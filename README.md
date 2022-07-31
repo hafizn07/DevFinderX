@@ -1,3 +1,23 @@
+
+<h1 align="center">
+  <br>
+  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="Assets/images/DEV.png" alt="Markdownify" width="200" style="border-radius:10px"></a>
+  <br>
+  DEV-finderX
+  <br>
+</h1>
+
+<h4 align="center">A webtool that provides GitHub user details using <a href="https://api.github.com/" target="_blank">Github API</a>.</h4>
+
+<p align="center">
+  <a href="#overview">Overview</a> •
+  <a href="#built-with">Build with</a> •
+  <a href="#links">Live links</a>
+</p>
+
+![screenshot](Assets/images/preview.png)
+![screenshot](Assets/images/preview.gif)
+
 ## Overview
 
 ### The challenge
@@ -10,54 +30,27 @@ Users should be able to:
 - Switch between light and dark themes
 - Researched `prefers-color-scheme` in CSS.
 
-### Preview
+## Built with
 
-![](./Assets/images/preview.png)
+- [![Html5][Html5]][Html5-url] [![CSS3][CSS3]][CSS3-url] [![javascript][javascript]][javascript-url]
+- [![Github API][Github API]][Github API-url]
+- Mobile-first workflow
+- Flexbox
+- CSS Grid
 
-### Links
+## Links
 
 - Solution URL: [GitHub](https://github.com/hafizmp/DevFinder)
 - Live Site URL: [DEVfinderX](https://devfinderx.netlify.app/)
 
-## My process
+[Html5]: https://img.shields.io/badge/HTML5-CFD2CF?style=for-the-badge&logo=html5&logoColor=EB1D36
+[Html5-url]: https://developer.mozilla.org/en-US/docs/Glossary/HTML5
 
-### Built with
+[CSS3]: https://img.shields.io/badge/CSS3-293462?style=for-the-badge&logo=css3&logoColor=E7F6F2
+[CSS3-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
+[javascript]: https://img.shields.io/badge/JAVASCRIPT-04293A?style=for-the-badge&logo=javascript&logoColor=FFF80A
+[javascript-url]: https://developer.mozilla.org/en-US/docs/Web/javascript
 
-### What I learned
-
-- Learned using var() for colors in CSS.
-
-```css
---body-bg-color-: #f6f8ff;
-
-body {
-    background-color: var(--body-bg-color-);
-}
-```
-- Working with APIs
-
-```js
-  const url = `https://api.github.com/users/${input.value}`;
-  async function getUrl() {
-    const response = await fetch(url);
-    const data = await response.json();
-    
-    //
-    
-}
-```
-
-- Switch between Themes in the App.
-
-```js
-const toggle = function (e) {....}
-toggleColorButtons.forEach((btn) => {...})
-```
-
-
+[Github API]: https://img.shields.io/badge/GITHUB%20API-EEEEEE?style=for-the-badge&logo=github&logoColor=171717
+[Github API-url]: https://api.github.com/
