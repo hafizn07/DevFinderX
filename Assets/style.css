@@ -56,6 +56,15 @@
     font-weight: bold;
     color: var(--head-color-);
   }
+  #byline{
+    font-size: small;
+    line-height: 1px;
+    opacity: 0.5;
+  }
+  #byline a{
+    text-decoration: none;
+    color: var(--head-color-);
+  }
   :root[color-mode="light"] .light--hidden {
     display: none;
   }
@@ -63,9 +72,6 @@
     display: none;
   }
   
-  
-  
- 
   
   .color-mode__btn {
     font-size: 13px;
@@ -119,7 +125,7 @@
   
   ::placeholder {
     color: var(--search-color-);
-    opacity: 1;
+    opacity: 0.6;
   }
   
   .searchbtn {
