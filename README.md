@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="Assets/images/DEV.png" alt="Markdownify" width="200" style="border-radius:10px"></a>
+  <a href="https://devfinderx.netlify.app/"><img src="Assets/images/DEV.png" alt="DevFinderX" width="200" style="border-radius:10px"></a>
   <br>
   DEV-finderX
   <br>
