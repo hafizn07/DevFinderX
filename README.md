@@ -20,7 +20,7 @@
 
 ## Overview
 
-### The challenge
+### The challenges
 
 Users should be able to:
 
